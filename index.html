@@ -6,35 +6,30 @@
     <title>SBTB TRIVIA</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
 
   <body>
-    <h1>Header</h1>
+    
                 <!-- <<<<<<<BOOTSTRAP JUMBOTRON>>>>>>>>> -->
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <img src="assets/images/background-1024x576.png">
+        <h1 class="display-4" id="title">Trivia Game!</h1>
+        <div class="instructions">Can you get all 10 questions correct in 60 seconds?</div>
+        <div class="time-div">Time Remaining: <span id="time">60</span> seconds!</div>
+        <div class="questions"><h3>Question:</h3></div>
+        <div class="questions-box"></div>
+        <div class="answers"><h3>Answers:</h3></div>
+        <div class="answers-box"></div>
+      <a class="btn btn-primary btn-lg" href="#" role="button" id="start-button">Start Game</a>
+      <a class="btn btn-primary btn-lg" href="#" role="button" id="next-button">Next Question</a>
     </div>
 
-    <p>
-      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book. It has survived not only
-      five centuries, but also the leap into electronic typesetting, remaining
-      essentially unchanged. It was popularised in the 1960s with the release of
-      Letraset sheets containing Lorem Ipsum passages, and more recently with
-      desktop publishing software like Aldus PageMaker including versions of
-      Lorem Ipsum.
-    </p>
-
+    
   </body>
+
   <!-- <<<<<javaScript Links>>>>> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script rel="javascript" type="text/javascript" src="assets/javascript/app.js"></script>
-  
 </html>

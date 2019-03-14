@@ -1,0 +1,75 @@
+body {
+    background-image: url("https://i.imgur.com/opkriub.jpg");
+}
+
+body img {
+    max-width: 1400px;
+}
+
+.jumbotron {
+    position: relative;
+    max-width: 1060px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.jumbotron img {
+    width: 100%;
+}
+
+#title {
+    color: hotpink;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+
+.time-div {
+    font-size: 30px;
+    position: absolute;
+    top: 170px;
+    right: 58px;
+}
+
+.instructions {
+    font-size: 30px;
+    position: absolute;
+    top: 170px;
+    right: 58px;
+}
+
+#time {
+    color: white;
+}
+
+.questions {
+
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    bottom: 300px;
+    left: 60px;
+}
+
+.answers {
+
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    bottom: 200px;
+    left: 60px;
+}
+
+#start-button {
+    position: absolute;
+    top: 225px;
+    right: 58px;
+}
+
+#next-button {
+    position: absolute;
+    top: 225px;
+    right: 58px;
+}
+
+    
