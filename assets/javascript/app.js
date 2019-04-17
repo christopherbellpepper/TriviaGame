@@ -1,7 +1,5 @@
 $(document).ready(function() {
   $(".time-div").hide();
-  $(".questions").hide();
-  $(".answers").hide();
 
   var questions = [
     {
@@ -77,8 +75,6 @@ $(document).ready(function() {
     $("#start-button").hide();
     $(".instructions").hide();
     $(".time-div").show();
-    $(".questions").show();
-    $(".answers").show();
  
   });
 

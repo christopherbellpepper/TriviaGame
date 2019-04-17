@@ -44,19 +44,19 @@ body img {
     color: white;
 }
 
-.questions {
+.questions-box {
 
     font-family: 'Abril Fatface', cursive;
     position: absolute;
-    bottom: 300px;
+    bottom: 260px;
     left: 60px;
 }
 
-.answers {
+.answers-box {
 
     font-family: 'Abril Fatface', cursive;
     position: absolute;
-    bottom: 200px;
+    bottom: 160px;
     left: 60px;
 }
 
