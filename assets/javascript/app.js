@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $(".time-div").hide();
-
+  
   var questions = [
     {
       question: "Which of the songs below was not a song done by the gang?",
-      guesses: ["Go For It", "Friends Forever", "Did We Ever Have a Chance", "You Ain't Seen Nothin Yet"],
-      answer: "You Ain't Seen Nothin Yet",
+      guesses: ["Go For It", "Friends Forever", "Did We Ever Have a Chance", "You Aint Seen Nothin Yet"],
+      answer: "You Aint Seen Nothin Yet",
     },
      {
       question: "What was the original title of this television series?",
@@ -54,11 +54,13 @@ $(document).ready(function() {
     }
   ]
 
-
   var startTime = 30;
   var timer;
   var currentQuestion = 0;
+  var correctAnswers = 0;
+  var wrongAnswers = 0;
 
+  // timer
   function countdown() {
     startTime--;
     $('#time').html(startTime);
@@ -67,7 +69,8 @@ $(document).ready(function() {
       clearInterval(timer);
     }
   };
- 
+
+ // on click starts timer and loads first question
   $('#start-button').on('click', function() {
     timer = setInterval(countdown, 1000);
     loadQuestion();
@@ -78,20 +81,36 @@ $(document).ready(function() {
  
   });
 
+  // loads questions one after the other
   function loadQuestion() {
     $(".questions-box").html('<h2>' + questions[currentQuestion].question + '</h2>')
     for (var i = 0; i < questions[currentQuestion].guesses.length; i++) {
-      $(".answers-box").append("<button class='answer-button'>" + questions[currentQuestion].guesses[i] + "</button>")
+      $(".answers-box").append(`<button data-answer=${questions[currentQuestion].answer} 
+      class=answer-button>${questions[currentQuestion].guesses[i]}</button>`)
     }
   }
 
-  $(document).on('click','.answer-button', function() {
+  // cycles through questions once an answer is selected
+  $(document).on('click','.answer-button', function(event) {
     currentQuestion++;
     console.log(currentQuestion);
+    evaluateQuestion(event.target);
     clearQuestion();
     loadQuestion();
-
+    
   });
+
+  function evaluateQuestion(clickedAnswer) {
+    console.log('clicked answer: ', );
+    if ($(clickedAnswer).attr("data-answer") === questions[currentQuestion].answer) {
+      correctAnswers++;
+    } else {
+      wrongAnswers++
+    }
+    console.log('correct answers:', correctAnswers)
+    console.log('wrong answers:', wrongAnswers);
+  
+  }
 
  function clearQuestion() {
   $(".answers-box").empty();
