@@ -33,6 +33,13 @@ body img {
     right: 58px;
 }
 
+.score-div {
+    font-size: 30px;
+    position: absolute;
+    bottom: 260px;
+    left: 60px;
+}
+
 .instructions {
     font-size: 30px;
     position: absolute;
@@ -45,16 +52,12 @@ body img {
 }
 
 .questions-box {
-
-    font-family: 'Abril Fatface', cursive;
     position: absolute;
     bottom: 260px;
     left: 60px;
 }
 
 .answers-box {
-
-    font-family: 'Abril Fatface', cursive;
     position: absolute;
     bottom: 160px;
     left: 60px;
